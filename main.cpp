@@ -101,10 +101,6 @@ public:
         return result;
     }
 
-//    void on_ready_data(KeyType const& key, UserType *data)
-//    {
-//    }
-
     ~Cache_line() {
         std::cout << "Cache statistics:" << std::endl
                 << "hit_count: " << stat.hit_count << std::endl
