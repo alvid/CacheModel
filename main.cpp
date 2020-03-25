@@ -165,7 +165,7 @@ template <typename KeyType, typename UserType>
 void reset(Cache_line<KeyType, UserType> &cache_line, size_t count)
 {
     for(size_t i=0; i<count; ++i) {
-        std::this_thread::sleep_for(std::chrono::nanoseconds(int(1 + std::rand()/((RAND_MAX + 1u)/499))));
+        std::this_thread::sleep_for(std::chrono::nanoseconds(int(100 + std::rand()/((RAND_MAX + 1u)/499))));
         cache_line.reset();
     }
 }
